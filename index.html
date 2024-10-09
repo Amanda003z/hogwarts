@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/logo.png">
+    <title>Sombrero Seleccionador</title>
+</head>
+<body>
+    <header class="header_container">
+        <div class="img_container">
+            <img src="images/hogwarts_icon.png" alt="hogwarts.png">
+        </div>
+
+        <div class="list_container">
+            <ul class="options-list">
+                <li class="list-item item-info"><a href="#">About Us</a></li>
+                <li class="list-item item-contact"><a href="#">Contact</a></li>
+                <li class="list-item item-opinions"><a href="#">Comments</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="main_container">
+        <div class="introduction_container">
+            <h2>Bienvenido al <span>Colegio Hogwarts de Magia y Hechicería...</span></h2>
+            <p class="quote">"Puedes pertenecer a <strong>Gryffindor</strong>,
+                donde habitan los valientes.
+                Su osadía, temple y caballerosidad
+                ponen aparte a los de Gryffindor...
+                <br>Puedes pertenecer a <strong>Hufflepuff</strong>,
+                donde son justos y leales.
+                Esos perseverantes Hufflepuff
+                de verdad no temen el trabajo pesado...
+                <br>O tal vez a la antigua sabiduría de <strong>Ravenclaw</strong>,
+                si tienes una mente dispuesta,
+                porque los de inteligencia y erudición
+                siempre encontrarán allí a sus semejantes...
+                <br>O tal vez en <strong>Slytherin</strong>
+                harás tus verdaderos amigos.
+                Esa gente astuta utiliza cualquier medio
+                para lograr sus fines."</p>
+            <p>Responde las siguientes preguntas con honestidad y el sombrero seleccionador te asignará una de nuestras cuatro casas, la que será tu nueva familia dentro del colegio. Buena suerte... </p>
+        </div>
+
+        <form class="quizz_container">
+            <div class="question_container">
+                <h3 class="question_header">PREGUNTA 1</h3>
+                <p>Digamos que tienes un examen la próxima semana, ¿cómo te vas a preparar?</p>
+
+                <div class="radio-buttons_container">
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-1" id="1a"> 
+                        <p>Les digo a mis compañeros de clase que nos reunamos todos juntos en la biblioteca.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-1" id="1b"> 
+                        <p>Reviso mis libretas y el libro de texto y estudio solo en mi casa.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-1" id="1c">
+                        <p>Estudio en clases todos los días de esa semana y presto atención al profesor para así luego no tener que estudiar en la casa.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-1" id="1d">
+                        <p>No estudio, intentaré sobornar al profesor para aprobar.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="question_container">
+                <h3 class="question_header">PREGUNTA 2</h3>
+                <p>Una vez terminados tus estudios, ¿en qué Departamento del Ministerio de Magia te gustaría trabajar?</p>
+
+                <div class="radio-buttons_container">
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-2" id="2a"> 
+                        <p>Departamento de Cooperación Mágica Internacional.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-2" id="2b"> 
+                        <p>Departamento de Seguridad Mágica.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-2" id="2c">
+                        <p>Departamento de Misterios.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-2" id="2d">
+                        <p>Departamento de Regulación y Control de Criaturas Mágicas.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="question_container">
+                <h3 class="question_header">PREGUNTA 3</h3>
+                <p>¿Cuál es tu asignatura favorita?</p>
+
+                <div class="radio-buttons_container">
+                    <div class="option_container">
+                        <input type="radio" class="option" name="queston-3" id="3a"> 
+                        <p>Defensa Contra Las Artes Oscuras, me gusta el peligro y la acción.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="queston-3" id="3b"> 
+                        <p>Pociones, llevo en la sangre la habilidad de ser un gran pocionero.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="queston-3" id="3c">
+                        <p>Cuidado de criaturas mágicas, adoro los animales.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="queston-3" id="3d">
+                        <p>Encantamientos, no existe hechizo que se me resista.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question_container">
+                <h3 class="question_header">PREGUNTA 4</h3>
+                <p>Has terminado todas las clases del día, ¿en qué pasas el tiempo libre antes de que se haga de noche?</p>
+
+                <div class="radio-buttons_container">
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-4" id="4a"> 
+                        <p>Salgo a caminar por los pasillos a molestar a otros y presumir de mis habilidades.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-4" id="4b"> 
+                        <p>Me reúno con mis amigos cerca del Lago a conversar y contarnos lo que hicimos en el día.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-4" id="4c">
+                        <p>Me quedo a leer sobre curiosidades del mundo mágico en la torre, para q no molesten mi lectura.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-4" id="4d">
+                        <p>Me reúno con mis amigos y buscamos alguna aventura aunque esto conlleve romper alguna regla.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question_container">
+                <h3 class="question_header">PREGUNTA 5</h3>
+                <p>¿Cuál elemento te caracteriza?</p>
+
+                <div class="radio-buttons_container">
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-5" id="5a"> 
+                        <p>Tierra.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-5" id="5b"> 
+                        <p>Aire.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-5" id="5c">
+                        <p>Fuego.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-5" id="5d">
+                        <p>Agua.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question_container">
+                <h3 class="question_header">PREGUNTA 6</h3>
+                <p>Te encuentras a un gran amigo de camino al dormitorio y te cuenta de un problema que se le ha presentado. ¿Qué haces?</p>
+
+                <div class="radio-buttons_container">
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-6" id="6a"> 
+                        <p>Busco las maneras de solucionar su problema y le muestro cuáles son las mejores opciones para que escoja.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-6" id="6b"> 
+                        <p>Escucho su problema y lo acompaño a resolverlo intrépidamente.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-6" id="6c">
+                        <p>Si es muy buen amigo doy la vida por resolverlo, de lo contrario solo finjo interesarme.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-6" id="6d">
+                        <p>Lo escucho y lo aconsejo, pero al final le digo que haga lo que haga lo voy a apoyar.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question_container">
+                <h3 class="question_header">PREGUNTA 7</h3>
+                <p>Encuentras una persona muerta en el colegio. ¿Cómo reaccionas?</p>
+
+                <div class="radio-buttons_container">
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-7" id="7a"> 
+                        <p>Cargaría el cuerpo y lo llevaría a alguien que sepa hacer algo.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-7" id="7b"> 
+                        <p>No es conocido mío y no quiero meterme en problemas, así que mejor lo ignoro.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-7" id="7c">
+                        <p>Busco ayuda rápidamente a ver si se puede hacer algo.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-7" id="7d">
+                        <p>Me relajo y analizo si todavía sigue con vida, si aún tiene signos vitales intento salvarlo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question_container">
+                <h3 class="question_header">PREGUNTA 8</h3>
+                <p>Tienes prueba al otro día, no has estudiado en todo este tiempo y solo te queda la noche ¿a qué le dedicas ese tiempo?</p>
+
+                <div class="radio-buttons_container">
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-8" id="8a"> 
+                        <p>Empiezo a idear un plan para poder llevar los apuntes a la prueba.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-8" id="8b"> 
+                        <p>Me acuesto a dormir y que sea lo que a Dios le apetezca.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-8" id="8c">
+                        <p>Me leo los apuntes una vez y me voy a dormir, al otro día trato de responder todo por lógica.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-8" id="8d">
+                        <p>Me paso la noche estudiando sin dormir, no puedo arriesgarme.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question_container">
+                <h3 class="question_header">PREGUNTA 9</h3>
+                <p>¿Con cuál de estas criaturas mágicas te identificas?</p>
+
+                <div class="radio-buttons_container">
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-9" id="9a"> 
+                        <p>Pukwudgie.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-9" id="9b"> 
+                        <p>Ave del Trueno.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-9" id="9c">
+                        <p>Gato Wampus.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-9" id="9d">
+                        <p>Serpiente Cornuda.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="question_container">
+                <h3 class="question_header">PREGUNTA 10</h3>
+                <p>Llegó el día del baile ¿qué ropa te pondrías?</p>
+
+                <div class="radio-buttons_container">
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-10" id="10a"> 
+                        <p>Una ropa cómoda, pero que sirva para ir a una fiesta.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-10" id="10b"> 
+                        <p>Una ropa elegante que demuestre que soy una persona que cuida su imagen y siempre voy acorde a la situación.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-10" id="10c">
+                        <p>Ropa oscura, es que la amo, aunque no sea acorde me gusta y es lo que importa.</p>
+                    </div>
+
+                    <div class="option_container">
+                        <input type="radio" class="option" name="question-10" id="10d">
+                        <p>Le daría a mi ropa un toque especial para volverla única.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <input type="submit" class="button" role="button" value="Conocer mi casa...">
+        </form>
+
+        <div class="result_container">
+            <img class="result_img">
+        </div>
+    </main>
+
+    <footer class="footer_container">
+        <p>Hogwarts - Copyrights Reserved 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
