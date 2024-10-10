@@ -1,18 +1,29 @@
-const gryffindor = 30;
-const slytherin = 30;
-const ravenclaw = 30;
-const hufflepuff = 30;
+const password = '123abc';
+const adminButton = document.querySelector('.admin_button');
+
+adminButton.addEventListener("click", () => {
+    const typedPassword = document.querySelector('.admin_password').value;
+    if (password == typedPassword) {
+        const houses = document.querySelector('.houses_container');
+        houses.style.visibility = "visible";
+    }
+});
+
+const gryffindor = document.querySelector('.gry');
+const slytherin = document.querySelector('.sly');
+const ravenclaw = document.querySelector('.raven');
+const hufflepuff = document.querySelector('.huff');
 
 let answersGry = 0;
 let answersSly = 0;
 let answersRaven = 0;
 let answersHuff = 0;
 
-const button = document.querySelector(".sorting_button");
+const sortingButton = document.querySelector(".sorting_button");
 
-button.addEventListener("click", () => {
+sortingButton.addEventListener("click", () => {
     const img = document.querySelector('.result_img');
-    //if (todas las preguntas fueron respondidas) {
+    if (3 > 2) {
         if (document.querySelector('input[id="1a"]:checked')) {
             answersHuff++;
         } else if (document.querySelector('input[id="1b"]:checked')) {
@@ -122,10 +133,17 @@ button.addEventListener("click", () => {
         } else if (getHouse() == 3) {
             img.src = "images/houses/slytherin.jpg";
         }
+
         img.style.opacity = "1";
-    //} else {
-        //img.alt = "No has respondido todas las preguntas..."
-    //}
+        document.querySelector('.sorting_error').innerHTML = "";
+
+        answersGry = 0;
+        answersSly = 0;
+        answersRaven = 0;
+        answersHuff = 0;
+    } else {
+        document.querySelector('.sorting_error').innerHTML = "No has respondido todas las preguntas...";
+    }
 });
 
 function getHouse() {
@@ -141,3 +159,32 @@ function getHouse() {
 
     return index;
 }
+
+/*function allQuestionsAnswered() {
+    let counter = 0;
+
+    let questions = [
+        document.querySelectorAll('input[name="question-1"]'),
+        document.querySelectorAll('input[name="question-2"]'),
+        document.querySelectorAll('input[name="question-3"]'),
+        document.querySelectorAll('input[name="question-3"]'),
+        document.querySelectorAll('input[name="question-3"]'),
+        document.querySelectorAll('input[name="question-3"]'),
+        document.querySelectorAll('input[name="question-3"]'),
+        document.querySelectorAll('input[name="question-3"]'),
+        document.querySelectorAll('input[name="question-3"]'),
+        document.querySelectorAll('input[name="question-3"]')
+    ];
+
+    for (let i = 0; i < questions.length; i++) {
+        for (let j = 1; j < questions[0].length; j++) {
+            if (questions[i][j].checked) {
+                counter++; break;
+            }
+        }
+    }
+
+    if (counter == 10) {
+        return true;
+    } else return false
+}*/

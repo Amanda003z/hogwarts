@@ -37,19 +37,107 @@ body {
     position: fixed;
     top: 0;
 
-    width: 100dvw;
-    height: 12dvh;
+    width: 100vw;
+    height: 12vh;
     background-image: linear-gradient(var(--dark-color) 70%, transparent);
 }
 
 .img_container {
-    height: 13dvh;
+    height: 13vh;
+
+    cursor: pointer;
 }
 
 .img_container img {
     position: cover;
     height: 100%;
 }
+
+.img_container img:hover {
+    cursor: pointer;
+    opacity: .7;
+}
+
+.header_checkbox {
+    display: none;
+}
+
+/* ---------------->>> ADMIN OPTIONS <<<--------------- */
+
+.admin_container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+
+    position: fixed;
+    gap: 15px;
+    width: 47vw;
+    margin: 0 15px;
+    padding: 20px;
+
+    background-image: linear-gradient(#000d, #000d);
+    border-radius: 7px;
+}
+
+.header_checkbox:checked ~ .admin_container {
+    display: flex;
+}
+
+input {
+    border-radius: 10px;
+}
+
+input:hover, input:focus {
+    outline: none;
+
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+.access_container {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.admin_password {
+    width: 23vw;
+    padding: 6px 10px;
+    font-size: 1.1em;
+}
+
+.admin_button {
+    height: 70%;
+    border-radius: 6px;
+    background-color: transparent;
+    color: var(--light-color);
+}
+
+.admin_button:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+.houses_container {
+    display: flex;
+    flex-direction: column;
+
+    visibility: hidden;
+}
+
+.house_input {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 3px 5px;
+}
+
+input[type="number"] {
+    width: 27%;
+    padding: 4px;
+}
+
+/* ---------------->>> NAV SECTION <<<--------------- */
 
 .options-list {
     display: flex;
@@ -161,12 +249,18 @@ body {
     box-shadow: 0 0 3px var(--light-color);
 }
 
+.sorting_error {
+    margin: auto;
+    font-size: 1.3em;
+    font-style: italic;
+}
+
 /* ---------------->>> RESULTS SECTION <<<--------------- */
 
 .result_container {
     margin: auto;
-    height: 50dvh;
-    width: 60dvw;
+    height: 300px;
+    width: 300px;
     box-shadow: 0 0 10px var(--light-color);
 }
 
