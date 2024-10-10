@@ -137,6 +137,20 @@ input[type="number"] {
     padding: 4px;
 }
 
+.newInfo_button {
+    height: 70%;
+    margin-top: 10px;
+
+    border-radius: 6px;
+    background-color: transparent;
+    color: var(--light-color);
+}
+
+.newInfo_button:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
 /* ---------------->>> NAV SECTION <<<--------------- */
 
 .options-list {
@@ -193,7 +207,7 @@ input[type="number"] {
 /* ---------------->>> QUIZZ SECTION <<<--------------- */
 
 .quizz_container {
-    margin: 40px 30px;
+    margin: 40px 25px;
 }
 
 .question_container > h3 {
