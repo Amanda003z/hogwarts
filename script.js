@@ -8,10 +8,11 @@ const adminButton = document.querySelector('.admin_button');
 
 adminButton.addEventListener("click", () => {
     const typedPassword = document.querySelector('.admin_password').value;
+    const houses = document.querySelector('.houses_container');
+
     if (password == typedPassword) {
-        const houses = document.querySelector('.houses_container');
         houses.style.visibility = "visible";
-    }
+    } else houses.style.visibility = "hidden";
 });
 
 let prioritize;
@@ -230,7 +231,7 @@ sortingButton.addEventListener("click", () => {
                 }
             }
         }
-        img.style.opacity = "1";
+        img.style.opacity = "0.9";
         document.querySelector('.sorting_error').innerHTML = "";
 
     } else {
