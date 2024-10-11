@@ -22,10 +22,10 @@
                 </div>
     
                 <div class="houses_container">
-                    <label class="house_input"><input type="number" id="gry"> Gryffindor</label>
-                    <label class="house_input"><input type="number" id="raven"> Ravenclaw</label>
-                    <label class="house_input"><input type="number" id="sly"> Slytherin</label>
-                    <label class="house_input"><input type="number" id="huff"> Hufflepuff</label>
+                    <label class="house_input"><input type="checkbox" id="gryCheck"><input type="number" id="gry" min="0"> Gryffindor</label>
+                    <label class="house_input"><input type="checkbox" id="ravenCheck"><input type="number" id="raven" min="0"> Ravenclaw</label>
+                    <label class="house_input"><input type="checkbox" id="slyCheck"><input type="number" id="sly" min="0"> Slytherin</label>
+                    <label class="house_input"><input type="checkbox" id="huffCheck"><input type="number" id="huff" min="0"> Hufflepuff</label>
                     <button class="newInfo_button">Actualizar</button>
                 </div>
             </div>
@@ -333,8 +333,10 @@
                 </div>
             </div>
     
-            <button class="sorting_button">Conocer mi casa...</button>
-            <label class="sorting_error"></label>
+            <div class="sorting">
+                <button class="sorting_button">Conocer mi casa...</button>
+                <label class="sorting_error"></label>
+            </div>
         </div>
 
         <div class="result_container">

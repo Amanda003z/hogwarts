@@ -11,6 +11,10 @@ body, header, nav, div, label, h1, h2, h3, p, footer {
     padding: 0;
 }
 
+img {
+    user-select: none;
+}
+
 body {
     font-family: '';
     color: var(--light-color);
@@ -40,6 +44,8 @@ body {
     width: 100vw;
     height: 12vh;
     background-image: linear-gradient(var(--dark-color) 70%, transparent);
+    
+    user-select: none;
 }
 
 .img_container {
@@ -70,6 +76,7 @@ body {
     align-items: center;
 
     position: fixed;
+    z-index: 100;
     gap: 15px;
     width: 47vw;
     margin: 0 15px;
@@ -135,6 +142,10 @@ input:hover, input:focus {
 input[type="number"] {
     width: 27%;
     padding: 4px;
+}
+
+input[type="checkbox"] {
+    accent-color: var(--dark-color);
 }
 
 .newInfo_button {
@@ -241,6 +252,12 @@ input[type="number"] {
     accent-color: var(--dark-color);
 }
 
+.quizz_container .sorting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .quizz_container .sorting_button {
     display: flex;
     margin: 40px auto;
@@ -265,7 +282,6 @@ input[type="number"] {
 }
 
 .sorting_error {
-    margin: auto;
     font-size: 1.3em;
     font-style: italic;
 }
